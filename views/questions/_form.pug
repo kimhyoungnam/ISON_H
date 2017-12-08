@@ -1,0 +1,40 @@
+.form-group
+  label(for="title") Event Title
+  input.form-control(type="text", name="title", placeholder="Give it a short distinct name", value=question.title)
+.form-group
+  label(for="location") Location
+  input.form-control(type="text", name="location", placeholder="where's your Event?", value=question.location)
+.form-group
+  label(for="Date") start end
+  .form-row
+    .col-lg-4
+      input.form-control(type='date',name="startDate", placeholder="#{moment(question.createdAt).format('YYYY-MM-DD')}", value=question.startDate)
+   
+    .col-lg-4
+      input.form-control(type='date',name="endDate", placeholder="#{moment(question.createdAt).format('YYYY-MM-DD')}", value=question.endDate)
+
+.form-group
+  label(for="Event") Event
+  textarea.form-control(name="content", rows="5")= question.content
+
+  .custom-controls-stacked.d-block.my-3
+    label.custom-control.custom-radio
+      input#radioStacked1.custom-control-input(name='radio-stacked', type='radio', required='')
+      span.custom-control-indicator
+      span.custom-control-description free
+    label.custom-control.custom-radio
+      input#radioStacked2.custom-control-input(name='radio-stacked', type='radio', required='')
+      span.custom-control-indicator
+      span.custom-control-description  valid
+    
+  select.custom-select.d-block.my-3(required='')
+    option(value='') Open this select category
+    option(value='1') music
+    option(value='2') sport
+    option(value='3') fashion
+
+
+
+.form-group
+  button.btn.btn-primary(type='submit') make Event!
+    

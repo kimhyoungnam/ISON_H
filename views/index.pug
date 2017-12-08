@@ -1,0 +1,95 @@
+extends layout
+
+block content
+  .slideshow
+    .carousel.slide(data-ride='carousel', data-interval='2000')
+      #show.carousel-inner
+        .carousel-item.active
+         img.d-block.w-100(src='/images/go.jpg', alt='First slide')
+        .carousel-item
+          img.d-block.w-100(src='/images/T.jpg', alt='Second slide')
+        .carousel-item
+          img.d-block.w-100(src='/images/jjj.jpg', alt='Third slide')
+        .carousel-item
+          img.d-block.w-100(src='/images/c.jpg', alt='fourth slide')
+        .carousel-item
+          img.d-block.w-100(src='/images/s.jpg', alt='fifth slide')
+
+  .jumbotron
+    .container
+      #top_jumbo.jumbotron.text-center
+        .container
+          h1.display-3 Find Your Event!
+          #big_search.row
+            .col-lg-12
+              .input-group
+                input.form-control(type='text', placeholder='Search for Clothes', aria-label='Search for Clothes')
+                span.input-group-btn
+                  button.btn.btn-secondary(type='button') Search!
+
+      
+              
+
+  .container
+    .row
+      #mid_term.container.text-center
+        h2
+          | Today's issue
+          a(href='')  IN world
+      .container
+        #one.card-deck
+          .card
+            img.card-img-top(src='/images/album.jpg', alt='Card image cap')
+            .card-body
+              h4.card-title live life like
+              p.card-text release in july available on soundcloud
+              a(href='https://soundcloud.com/chulyoonrx/livelifelike') live life like
+          .card
+            img.card-img-top(src='/images/boston.png', alt='Card image cap')
+            .card-body
+              h4.card-title Boston Celtics!!
+              p.card-text Kyrie got MVP chants in Dallas
+               and leading the Celtics to their 16th straight win
+          .card
+            img.card-img-top(src='/images/nike.jpg', alt='Card image cap')
+            .card-body
+              h4.card-title Nikexoffwhite
+              p.card-text Nike has just announced official release info for the entire OFF WHITE x Nike “The Ten” Collection  All nine will release on November 20th 
+        #two.card-deck
+          .card
+            img.card-img-top(src='/images/car.jpg', alt='Card image cap')
+            .card-body
+              h4.card-title really?
+              p.card-text SSense (the online fashion store) launch a 1978 Ferrari 308 GTB on ssense.com 
+          .card
+            img.card-img-top(src='/images/lil.jpg', alt='Card image cap')
+            .card-body
+              h4.card-title R.I.P
+              p.card-text The rapper Lil Peep died on Wednesday night, November 15, 2017 in Tuscon, Arizona. He was 21.
+          .card
+            img.card-img-top(src='/images/post.jpg', alt='Card image cap')
+            .card-body
+              h4.card-title RockStar!!
+              p.card-text Post Malone and 21 Savage's recent, chart-topping collaboration "Rockstar" now has a visual accompaniment. 
+        #three.card-deck
+          .card
+            img.card-img-top(src='/images/yeezy.jpg', alt='Card image cap')
+            .card-body
+              h4.card-title yeezy
+              p.card-text Click our bio link to discover every store carrying the adidas Originals YEEZY BOOST 350 V2 "Beluga 2.0" on November 25.
+          .card
+            img.card-img-top(src='images/cy.png', alt='Card image cap')
+            .card-body
+              h4.card-title cyrex
+              p.card-text cyrex music video out now  like this?
+              a(href='https://youtu.be/VVCTc75I-m8') I₩ISH
+          .card
+            img.card-img-top(src='/images/t.png', alt='Card image cap')
+            .card-body
+              h4.card-title A New Electric Truck?
+              p.card-text Last week, Tesla unveiled a prototype of an electric, semi-autonomous truck that is set to enter production in 2019.
+      .col-md-12.text-center  
+        button.btn.btn-outline-warning.btn-lg(type='button')  I$ON
+            
+    
+          
