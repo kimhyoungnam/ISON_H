@@ -9,6 +9,10 @@
       #[span.number.num-votes= question.numLikes] likes,
       #[span.number.num-answers= question.numAnswers] review,
       #[span.number.num-views= question.numReads] reads
+  .container
+        h1.main-title Edit Event
+        form( method="POST")
+          input(type="hidden", name="_method", value="PUT")
   .col-sm
     .author
       | this Event on #{moment(question.createdAt).format('YYYY-MM-DD')}
