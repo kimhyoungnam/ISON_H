@@ -6,12 +6,10 @@
 .row
   .col-sm
     .numbers.
-      #[span.number.num-votes= question.numLikes] likes,
+      #[span.number.num-votes= question.numLikes] join,
       #[span.number.num-answers= question.numAnswers] review,
       #[span.number.num-views= question.numReads] reads
-
-    a.btn.btn-sm.need-confirm-btn.btn-outline-danger(href=`_method=DELETE`)
-      | #[i.fa.fa-trash] Delete
+  
   .col-sm
     .author
       | this Event on #{moment(question.createdAt).format('YYYY-MM-DD')}
