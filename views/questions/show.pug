@@ -9,7 +9,7 @@ block content
       include _question
 
       .buttons
-        button.btn.btn-primary #[i.fa.fa-thumbs-up] join
+        button.btn.btn-primary #[i.fa.fa-thumbs-up] like
         if currentUser && question.author.id == currentUser.id 
           | 
           a.btn.btn-outline-secondary(href=`/questions/${question.id}/edit`) Edit
