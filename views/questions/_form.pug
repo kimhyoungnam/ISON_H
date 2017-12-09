@@ -33,8 +33,9 @@
     option(value='2') sport
     option(value='3') fashion
 
+    .form-group
+      label(for="tags") Tags
+      input.form-control(type="text", name="tags", placeholder="tags separated by spaces", value=question.tags ? question.tags.join(" ") : "")
 
 
-.form-group
-  button.btn.btn-primary(type='submit') make Event!
     
