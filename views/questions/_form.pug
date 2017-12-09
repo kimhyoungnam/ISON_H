@@ -8,10 +8,10 @@
   label(for="Date") start end
   .form-row
     .col-lg-4
-      input.form-control(type='date',name="startDate", placeholder="#{moment(question.createdAt).format('YYYY-MM-DD')}", value=question.startDate)
+      input.form-control(type='datetime-local',name="startDate", placeholder="#{moment(question.createdAt).format('YYYY-MM-DD')}", value=question.startDate)
    
     .col-lg-4
-      input.form-control(type='date',name="endDate", placeholder="#{moment(question.createdAt).format('YYYY-MM-DD')}", value=question.endDate)
+      input.form-control(type='datetime-local',name="endDate", placeholder="#{moment(question.createdAt).format('YYYY-MM-DD')}", value=question.endDate)
 
 .form-group
   label(for="Event") Event
