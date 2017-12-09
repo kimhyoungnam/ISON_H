@@ -88,7 +88,7 @@ router.post('/', needAuth, catchErrors(async (req, res, next) => {
     endDate:req.body.endDate,
     author: user._id, //읽어오는거
     content: req.body.content,
-    tags: req.body.tags.split(" ").map(e => e.trim()),
+  //  tags: req.body.tags.split(" ").map(e => e.trim()),
   });
   await question.save();
   req.flash('success', 'Successfully posted');

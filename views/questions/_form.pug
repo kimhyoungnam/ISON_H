@@ -8,10 +8,10 @@
   label(for="Date") start end
   .form-row
     .col-lg-4
-      input.form-control(type='datetime-local',name="startDate", placeholder="#{moment(question.createdAt).format('YYYY-MM-DD')}", value=question.startDate)
+      input.form-control(type='date',name="startDate", placeholder="#{moment(question.createdAt).format('YYYY-MM-DD')}", value=question.startDate)
    
     .col-lg-4
-      input.form-control(type='datetime-local',name="endDate", placeholder="#{moment(question.createdAt).format('YYYY-MM-DD')}", value=question.endDate)
+      input.form-control(type='date',name="endDate", placeholder="#{moment(question.createdAt).format('YYYY-MM-DD')}", value=question.endDate)
 
 .form-group
   label(for="Event") Event
@@ -32,10 +32,3 @@
     option(value='1') music
     option(value='2') sport
     option(value='3') fashion
-
-    .form-group
-      label(for="tags") Tags
-      input.form-control(type="text", name="tags", placeholder="tags separated by spaces", value=question.tags ? question.tags.join(" ") : "")
-
-
-    
